@@ -1,4 +1,4 @@
-メモ
+メモ（GameTemplateからの移植）
 
 1.VisualStudioを新規で起動ー＞（右側の）「新しいプロジェクトの作成」を選択
 　－＞（左側の）「Windowsデスクトップウィザード」をダブルクリック
@@ -9,8 +9,8 @@
 2.GameTemplateで作成したソースプログラム（.cpp）とヘッダーファイル（.h）を
 　今作成した「NumberTouch」プロジェクト内にコピペ
 
-3.GameTemplateで準備していたimagesフォルダを今作成した「NumberTouch」
-　プロジェクト内にコピペ
+3.GameTemplateで準備していたimagesフォルダを「NumberTouch」プロジェクト
+ 内にコピペ
 
 4.「NumberTouch」プロジェクト内のソースファイルに以下を追加
 　　ソースファイル
@@ -25,7 +25,8 @@
 　　　　Game.h
 　　　　Menu.h
 
-6.プロジェクトでDxLibのヘッダーファイルやライブラリが読み込まれるように設定
+6.プロジェクトでDxLibが使えるように設定
+　（インクルードファイルの場所の設定、ライブラリの場所の設定）
 
 7.今回はConfig.cppとConfig.hは使わないので、各ソース内にConfig関連の関数を
 　使っている行があれば削除
